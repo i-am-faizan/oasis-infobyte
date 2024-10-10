@@ -1,0 +1,283 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+}
+
+
+.nav-toggle {
+  display: inline;
+  margin: 0 1rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.navbar .nav-links {
+  list-style: none;
+}
+
+.navbar .nav-links li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+  background-color: #f0f0f0;
+  /* Light grey background */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #333;
+  /* Adjust text color if needed */
+}
+
+
+.hero h2 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.hero .btn {
+  background-color: #ff5733;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Sections */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* Features */
+.features {
+  background-color: #fff;
+}
+
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feature {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  margin: 1rem;
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: #333;
+  color: #fff;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial {
+  max-width: 600px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* Events & Projects */
+.event-cards,
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.event,
+.project {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin: 1rem;
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* Signup */
+.signup {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.signup-form {
+  margin-top: 1rem;
+}
+
+.signup-form input {
+  padding: 0.8rem;
+  border: none;
+  margin-right: 0.5rem;
+}
+
+.signup-form button {
+  padding: 0.8rem 1.5rem;
+  background-color: #ff5733;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* FAQs */
+.faqs {
+  background-color: #f4f4f4;
+  padding: 4rem 0;
+}
+
+.faq-item {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.faq-item h4 {
+  cursor: pointer;
+}
+
+/* Hover effect for FAQs */
+.faq-item:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Us */
+.contact {
+  background-color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 80%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 0.8rem 2rem;
+  background-color: #ff5733;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .feature-cards,
+  .event-cards,
+  .project-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .nav-links {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: none;
+  }
+
+  .navbar .nav-links.active {
+    display: flex;
+  }
+
+  .navbar .nav-links li {
+    margin: 1rem 0;
+  }
+}
